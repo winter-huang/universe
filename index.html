@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>宇宙</title>
+    <style>
+        html,body{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-image: url("images/bg.jpg");
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: 620px;
+            height: 620px;
+            margin:20px auto;
+            position: relative;
+            transform: rotateX(-40deg) rotateY(10deg);
+        }
+        li{
+            position: absolute;
+            top: 50%;
+            left:50%;
+            /*transform: translate(-50%,-50%);*/
+            border-radius: 50%;
+            border: 2px solid #394057;
+        }
+        li span{
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        li:nth-child(1){
+            width: 60px;
+            height: 60px;
+            transform: translate(-50%,-50%);
+            border: 0;
+            background-color: #FFEB3B;
+            animation: spinSun 2s ease-in-out infinite;
+        }
+        li:nth-child(2){
+            width: 120px;
+            height: 120px;
+            animation: spin 15s infinite linear;
+        }
+        li:nth-child(2) span{
+            background-color: yellow;
+            top:90px;
+            left: 5px;
+        }
+        li:nth-child(3){
+            width: 180px;
+            height: 180px;
+            animation: spin 20s infinite linear;
+        }
+        li:nth-child(3) span{
+            background-color: blue;
+            top:50px;
+            left: 0px;
+        }
+        li:nth-child(4){
+            width: 240px;
+            height: 240px;
+            animation: spin 25s infinite linear;
+        }
+        li:nth-child(4) span{
+            background-color: green;
+            left: 209px;
+            top: 37px;
+            animation: spin 2s infinite linear;
+        }
+        small{
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            top:-4px;
+            left:-9px;
+            border-radius: 50%;
+            background-color: yellow;
+        }
+        li:nth-child(5){
+            width: 300px;
+            height: 300px;
+            background-image: url("images/asteroids_meteorids.png");
+            background-size: 100%,100%;
+            animation: spin 30s infinite linear;
+        }
+        li:nth-child(5) span{
+            background-color: red;
+            left: 95px;
+            top: 0;
+        }
+        li:nth-child(6){
+            width: 360px;
+            height: 360px;
+            animation: spin 35s infinite linear;
+        }
+        li:nth-child(6) span{
+            background-color: #CCC;
+            left: -5px;
+            top: 200px;
+        }
+        li:nth-child(7){
+            width: 420px;
+            height: 420px;
+            animation: spin 40s infinite linear;
+        }
+        li:nth-child(7) span{
+            background-color: green;
+            left: 300px;
+            top: 18px;
+        }
+        i{
+            position: absolute;
+            width: 12px;
+            height: 24px;
+            top:11px;
+            left:298px;
+            border: 2px solid #ccc;
+            border-radius: 50%;
+        }
+        li:nth-child(8){
+            width: 500px;
+            height: 500px;
+            animation: spin 45s infinite linear;
+        }
+        li:nth-child(8) span{
+            background-color: pink;
+            left: 5px;
+            top: 170px;
+        }
+        li:nth-child(9){
+            width: 560px;
+            height: 560px;
+            animation: spin 35s infinite linear;
+        }
+        li:nth-child(9) span{
+            background-color: blue;
+            left: 52px;
+            top: 100px;
+        }
+        li:nth-child(10){
+            width: 620px;
+            height: 620px;
+            animation: spin 45s infinite linear;
+        }
+        li:nth-child(10) span{
+            background-color: yellow;
+            top:240px;
+            left: 0px;
+        }
+
+
+        @keyframes spinSun {
+            from{
+                box-shadow: 0 0 20px #FFEB3B;
+            }
+            to{
+                box-shadow: 0 0 60px #FFEB3B;
+            }
+        }
+        @keyframes spin {
+            from{
+                transform:  translate(-50%,-50%) rotate(0deg);
+            }
+            to{
+                transform:  translate(-50%,-50%) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li></li>
+    <li><span></span></li>
+    <li><span></span></li>
+    <li><span><small></small></span></li>
+    <li><span></span></li>
+    <li><span></span></li>
+    <li><span></span><i></i></li>
+    <li><span></span></li>
+    <li><span></span></li>
+    <li><span></span></li>
+</ul>
+
+</body>
+</html>
